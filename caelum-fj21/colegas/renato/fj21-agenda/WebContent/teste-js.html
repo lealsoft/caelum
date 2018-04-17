@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script src="js/jquery.js"></script>
+		<script>
+			function acao(){
+				console.log("ação disparada");
+			}
+			acao();
+			function acaoBotao(){
+				$("#div_01").html("mudou o conteúdo");
+				//$("div").html("mudou o conteúdo"); muda para todos os div's
+				//alert("ação do botão"); //console.log("texto") para aparecer no console
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="ação" onclick="acaoBotao()" />
+		<br/>
+		<div id="div_01">
+			Texto
+		</div>
+		<div id="div_02">
+			Outro texto
+		</div>
+	</body>
+</html>
